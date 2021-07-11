@@ -5,6 +5,7 @@
     border: 2px solid orange;
     position: relative;
     margin: 15px;
+    overflow: hidden;
 }
 .photo img{
     width: 100%;
@@ -19,15 +20,22 @@
 }
 h3{
     text-align: center;
+    color: black;
+    background-image: linear-gradient(white,red,white,red,white,red,white,red);
 }
 .photo-frame:hover .photo-detail{
     display: block;
     background-color: rgba(227, 231, 238, 0.473);
     height: 170px;
-    color: white;
+    color: black;
+    font-family: monospace;
 }
 
 .photo-album{
     display: flex;
     flex-wrap: wrap;
+}
+.photo-frame:hover .photo{
+    transform: scale(1.5);
+    transition: transform 2s ease-in-out;
 }
